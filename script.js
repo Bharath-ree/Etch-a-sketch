@@ -28,13 +28,12 @@ function createGrid(size) {
         square.style.height = `${squareSize}px`;
         
         square.addEventListener('mouseover', function() {
-            square.style.backgroundColor = 'black';
+            square.style.backgroundColor = 'black'
         });
+    container.appendChild(square);    
     }
-    container.appendChild(square);
 }
 
-//add event listener to reset button
 const resetBtn = document.querySelector('#resetBtn');
 resetBtn.addEventListener('click', function() {
     let newSize = prompt('Enter new grid size (1-100):');
